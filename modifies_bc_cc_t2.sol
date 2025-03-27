@@ -144,20 +144,7 @@ function assignOwnership(uint256 _landId, address _newOwner) external onlyAdmin 
     function getOwnedLands(address _owner) public view returns (uint[] memory) {
         return ownedLands[_owner];
     }
-
-
-// SPDX-License-Identifier: MIT
-
-
-
-    // ... (keep your existing structs, mappings, and events)
-
-    // Add nonce tracking
-    
-
-   
-
-    function transferOwnershipWithSignature(
+function transferOwnershipWithSignature(
         uint256 _landId,
         address _newOwner,
         uint256 _expiry,
@@ -198,5 +185,5 @@ function assignOwnership(uint256 _landId, address _newOwner) external onlyAdmin 
         transferOwnership(_landId, _newOwner);
     }
 
-    // ... (rest of your existing functions)
+   
 }
